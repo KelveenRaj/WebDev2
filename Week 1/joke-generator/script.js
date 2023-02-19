@@ -1,3 +1,17 @@
+const btn = document.getElementById("get-joke");
+
+const jokercontainer = document.querySelector(".joke-content");
+
+btn.addEventListener("click", generatejoke);
+
+let joke;
+function generatejoke() {
+  joke = jokes[Math.floor(Math.random() * jokes.length)];
+  console.log(joke);
+
+  jokercontainer.innerHTML = joke;
+}
+
 const jokes = [
   "This statement",
   "Eight bytes walk into a bar.  The bartender asks, “Can I get you anything?” “Yeah,” reply the bytes.  “Make us a double.”",
@@ -10,3 +24,5 @@ const jokes = [
   "There are two ways to write error-free programs; only the third one works.",
   "The best thing about a Boolean is even if you are wrong, you are only off by a bit.",
 ];
+
+const meme = [];
