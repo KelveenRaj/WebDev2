@@ -3,10 +3,12 @@ Java script =
 - Arrays are used to hold one or more values.
 - Index number( Positioning of a vlue inside an array)
 - Don't use /new/ = cause /new/ is a fuction in js.script
+- every class infront must put "."
 - Properties & methods:
 
 * .lenght
 * .sort() = sort everything in acending order
 *  Math.floor(Math.random()*fruits.length)= choose any random numberfrom its length
 * document.getElementbyId = for only ID
+* document.createElement("")
 * document.queryselector("jsjsjs") = for only class
