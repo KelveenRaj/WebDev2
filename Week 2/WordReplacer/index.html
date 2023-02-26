@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="input" type="text" />
+    <button onclick="replace()">Replace</button>
+    <p id="output"></p>
+
+    <script>
+      function replace() {
+        var a = document.getElementById("input").value;
+        var b = a.replace(/JavaScript/g, "School");
+        document.getElementById("output").innerHTML = b;
+      }
+    </script>
+  </body>
+</html>
