@@ -1,3 +1,29 @@
+const btn = document.getElementById("get-joke");
+
+const jokeContainer = document.querySelector(".joke-content");
+
+btn.addEventListener("click", generateJoke);
+
+let joke;
+
+function generateJoke() {
+  joke = jokes[Math.floor(Math.random() * jokes.length)]
+  console.log(joke)
+
+  jokeContainer.innerHTML = joke
+}
+
+
+
+
+
+
+
+
+
+
+
+
 const jokes = [
   "This statement",
   "Eight bytes walk into a bar.  The bartender asks, “Can I get you anything?” “Yeah,” reply the bytes.  “Make us a double.”",
