@@ -10,24 +10,27 @@
   <body>
     <main>
       <section class="content">
-        <h2>Text Editor</h2>
+        <h2>Output</h2>
         <div class="textContent">
-          <p id="text">
-            My pet dog is my best friend in the world. We sleep together, eat
-            together, play together and also love our mom and dad together.
-            <br />
-            He is not just our pet dog but my brother and an important member of
-            my family. <br />The unconditional love and loyalty he shows to us
-            are never seen in anybody that I know off.
-          </p>
+          <p id="text"></p>
         </div>
       </section>
+
       <section class="sidebar">
-        <h2>Actions</h2>
-        <button id="changeDog">Dog</button>
-        <button id="changeCat">Cat</button>
+        <h2>Text Editor</h2>
+
+        <h3>Text Box</h3>
+        <textarea id="textInput" placeholder="Input text here!"></textarea>
+        <button id="save">Save</button>
+
+        <h3>Edit Text</h3>
+        <input id="changeWord" type="text" placeholder="Word you want to replace"/>
+        <input id="newWord" type="text" placeholder="New word"/>
+
+        <button id="edit">Edit</button>
       </section>
+
     </main>
-    <script src="./script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

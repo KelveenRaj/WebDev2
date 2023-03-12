@@ -91,3 +91,18 @@ button:hover {
   color: white;
   background-color: transparent;
 }
+
+#newWord {
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+#changeWord {
+  border-radius: 5px;
+}
+
+#textInput {
+  border-radius: 5px;
+  height: 100px;
+}
+
