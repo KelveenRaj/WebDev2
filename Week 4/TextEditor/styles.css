@@ -21,7 +21,7 @@ p {
 }
 
 #text {
-    font-size: large;
+  font-size: large;
 }
 
 .attribution {
@@ -95,14 +95,35 @@ button:hover {
 #newWord {
   margin-top: 10px;
   border-radius: 5px;
+  height: 30px;
+  background-color: #1d2326;
+  border-color: #bfa38a;
+  color: white;
 }
 
 #changeWord {
   border-radius: 5px;
+  height: 30px;
+  background-color: #1d2326;
+  border-color: #bfa38a;
+  color: white;
 }
 
 #textInput {
   border-radius: 5px;
   height: 100px;
+  background-color: #1d2326;
+  border-color: #bfa38a;
+  color: white;
 }
 
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.buttons button {
+  width: 170px;
+}
