@@ -1,0 +1,25 @@
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+input,
+select,
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+}
