@@ -1,8 +1,17 @@
 .container {
-  max-width: 300px;
+  background-color: lightblue;
+  border-color: darkgreen;
+  border-style: solid;
+  border-width: 5px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+}
+
+.heading {
+  font-family: arial black;
+  color: red;
 }
 
 input,
@@ -14,9 +23,16 @@ button {
 
 button {
   padding: 10px;
+  border-radius: 15px;
+  border-color: black;
   background-color: #4caf50;
-  color: #fff;
+  color: black;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: lightgreen;
+  color: white
 }
 
 p {
