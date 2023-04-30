@@ -1,35 +1,22 @@
-const taskList = [];
+let taskList = [];
+const addButton = document.getElementById("btn")
 
-const form = document.querySelector('form');
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const newTaskInput = document.querySelector('#new-task-input');
-  const newTask = newTaskInput.value;
-  taskList.push(newTask);
-  displayTaskList();
-  newTaskInput.value = '';
-});
+addButton.addEventListener("click", addTask)
 
-function displayTaskList() {
-  const taskListElement = document.querySelector('#task-list');
-  taskListElement.innerHTML = '';
-  taskList.forEach((task, index) => {
-    const listItem = document.createElement('li');
-    listItem.innerText = task;
-    const completeButton = document.createElement('button');
-    completeButton.innerText = 'Complete';
-    completeButton.addEventListener('click', () => {
-      taskList.splice(index, 1);
-      displayTaskList();
-    });
-    const deleteButton = document.createElement('button');
-    deleteButton.innerText = 'Delete';
-    deleteButton.addEventListener('click', () => {
-      taskList.splice(index, 1);
-      displayTaskList();
-    });
-    listItem.appendChild(completeButton);
-    listItem.appendChild(deleteButton);
-    taskListElement.appendChild(listItem);
-  });
+function addTask() {
+	let input = document.getElementById("input").value;
+	taskList.push(input);
+	document.getElementById("input").value = "";
+	displayTasks();
+}
+
+function displayTasks() {
+	let list = document.getElementById("task-list");
+    // This is to reset the list, u can try without this and see the difference
+	list.innerHTML = "";
+	for (let i = 0; i < taskList.length; i++) {
+		let li = document.createElement("li");
+		li.appendChild(document.createTextNode(taskList[i]));
+		list.appendChild(li);
+	}
 }
